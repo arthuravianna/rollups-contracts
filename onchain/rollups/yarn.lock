@@ -19,6 +19,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arthuravianna/cartesi-rollups@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@arthuravianna/cartesi-rollups@workspace:."
+  dependencies:
+    "@cartesi/util": "npm:6.3.0"
+    "@changesets/cli": "npm:^2"
+    "@ethersproject/abi": "npm:^5"
+    "@ethersproject/bytes": "npm:^5"
+    "@ethersproject/providers": "npm:^5"
+    "@nomicfoundation/hardhat-verify": "npm:^2.0.8"
+    "@nomiclabs/hardhat-ethers": "npm:^2"
+    "@openzeppelin/contracts": "npm:4.9.2"
+    "@safe-global/safe-singleton-factory": "npm:^1.0.18"
+    "@typechain/ethers-v5": "npm:^11"
+    "@typechain/hardhat": "npm:^8"
+    "@types/chai": "npm:^4"
+    "@types/mocha": "npm:^10"
+    "@types/node": "npm:^20"
+    "@usecannon/cli": "npm:^2.21.3"
+    chai: "npm:^4.2"
+    copyfiles: "npm:^2"
+    ethers: "npm:^5"
+    hardhat: "npm:^2"
+    hardhat-deploy: "npm:^0.11"
+    hardhat-gas-reporter: "npm:^1"
+    mocha: "npm:^10"
+    npm-run-all: "npm:^4"
+    npm-scripts-info: "npm:^0.3"
+    prettier: "npm:^3"
+    prettier-plugin-solidity: "npm:^1.0.0-beta.19"
+    rimraf: "npm:^5"
+    solhint: "npm:^3"
+    solhint-plugin-prettier: "npm:^0.0.5"
+    solidity-coverage: "npm:^0.8"
+    ts-generator: "npm:^0.1"
+    ts-node: "npm:^10"
+    typechain: "npm:^8"
+    typescript: "npm:^5"
+    viem: "npm:^1.15"
+  languageName: unknown
+  linkType: soft
+
 "@assemblyscript/loader@npm:^0.9.4":
   version: 0.9.4
   resolution: "@assemblyscript/loader@npm:0.9.4"
@@ -62,48 +104,6 @@ __metadata:
   checksum: abdcbdd590c7e31762e1bdab94dd466823c8bcedd3ff2fde85eeb94dac7cccaef151ac37c428bda7018ededd27c9a82b4dfeb621f978ad934232475a902f8e3a
   languageName: node
   linkType: hard
-
-"@cartesi/rollups@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@cartesi/rollups@workspace:."
-  dependencies:
-    "@cartesi/util": "npm:6.3.0"
-    "@changesets/cli": "npm:^2"
-    "@ethersproject/abi": "npm:^5"
-    "@ethersproject/bytes": "npm:^5"
-    "@ethersproject/providers": "npm:^5"
-    "@nomicfoundation/hardhat-verify": "npm:^2.0.8"
-    "@nomiclabs/hardhat-ethers": "npm:^2"
-    "@openzeppelin/contracts": "npm:4.9.2"
-    "@safe-global/safe-singleton-factory": "npm:^1.0.18"
-    "@typechain/ethers-v5": "npm:^11"
-    "@typechain/hardhat": "npm:^8"
-    "@types/chai": "npm:^4"
-    "@types/mocha": "npm:^10"
-    "@types/node": "npm:^20"
-    "@usecannon/cli": "npm:^2.21.3"
-    chai: "npm:^4.2"
-    copyfiles: "npm:^2"
-    ethers: "npm:^5"
-    hardhat: "npm:^2"
-    hardhat-deploy: "npm:^0.11"
-    hardhat-gas-reporter: "npm:^1"
-    mocha: "npm:^10"
-    npm-run-all: "npm:^4"
-    npm-scripts-info: "npm:^0.3"
-    prettier: "npm:^3"
-    prettier-plugin-solidity: "npm:^1.0.0-beta.19"
-    rimraf: "npm:^5"
-    solhint: "npm:^3"
-    solhint-plugin-prettier: "npm:^0.0.5"
-    solidity-coverage: "npm:^0.8"
-    ts-generator: "npm:^0.1"
-    ts-node: "npm:^10"
-    typechain: "npm:^8"
-    typescript: "npm:^5"
-    viem: "npm:^1.15"
-  languageName: unknown
-  linkType: soft
 
 "@cartesi/util@npm:6.3.0":
   version: 6.3.0
