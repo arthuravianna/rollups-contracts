@@ -100,6 +100,31 @@ contract CartesiDApp is
         _consensus.join();
     }
 
+    function validateVoucher(
+        address _destination,
+        bytes calldata _payload,
+        Proof calldata _proof
+    ) external view override returns (bool) {
+        bytes32 epochHash;
+        uint256 firstInputIndex;
+        uint256 lastInputIndex;
+
+        // query the current consensus for the desired claim
+        (epochHash, firstInputIndex, lastInputIndex) = getClaim(_proof.context);
+
+        // validate the epoch input index based on the input index range
+        // provided by the consensus
+        _proof.validity.validateInputIndexRange(
+            firstInputIndex,
+            lastInputIndex
+        );
+
+        // reverts if proof isn't valid
+        _proof.validity.validateVoucher(_destination, _payload, epochHash);
+
+        return true;
+    }
+
     function executeVoucher(
         address _destination,
         bytes calldata _payload,

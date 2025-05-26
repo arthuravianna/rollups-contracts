@@ -38,6 +38,12 @@ interface ICartesiDApp {
 
     // Permissionless functions
 
+    function validateVoucher(
+        address _destination,
+        bytes calldata _payload,
+        Proof calldata _proof
+    ) external view returns (bool);
+
     /// @notice Try to execute a voucher.
     ///
     /// Reverts if voucher was already successfully executed.
